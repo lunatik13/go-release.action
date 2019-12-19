@@ -9,4 +9,4 @@ rmdir $PROJECT_ROOT
 ln -s $GITHUB_WORKSPACE $PROJECT_ROOT
 cd $PROJECT_ROOT
 go get -v ./...
-go build
+CGO_ENABLED=0 go build
